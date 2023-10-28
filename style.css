@@ -1,0 +1,249 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button#closeBtn,
+button#name {
+  cursor: pointer;
+  border: 4px solid white;
+  background-color: rgb(33, 141, 249);
+  color: white;
+  width: 150px;
+  height: 60px;
+  font-size: 25px;
+  border-radius: 6px;
+  transition: 0.2s linear;
+}
+
+button#closeBtn:hover,
+button#name:hover,
+button#closeBtn:active,
+button#name:active {
+  background-color: white;
+  color: rgb(33, 141, 249);
+}
+
+button.choice {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.659);
+  color: white;
+  border: 2px solid white;
+  transition: 0.2s linear;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button.choice:hover,
+button.choice:active {
+  background-color: black;
+}
+
+@media screen and (min-width: 320px) {
+  section#initial {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(33, 141, 249);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    transition: 0.2s linear 200ms;
+  }
+
+  section#initial input {
+    width: 270px;
+    padding: 20px 15px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 25px;
+  }
+
+  section#initial button#name {
+    margin-top: 20px;
+  }
+
+  /* ======== start ===== */
+
+  section#start {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #218df9;
+    transition: 0.2s linear 200ms;
+    z-index: 1;
+  }
+  section#start img {
+    width: 150px;
+    height: 150px;
+  }
+
+  section#start p {
+    width: 300px;
+    padding: 20px 0;
+    font-size: 30px;
+    color: white;
+  }
+
+  section#start h1 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 35px;
+  }
+
+  /* ======== computer ===== */
+
+  section#computer {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background-color: #808080;
+  }
+
+  section#computer img {
+    width: 150px;
+    margin: 0 auto;
+  }
+
+  /* ======== screen ===== */
+
+  section#screen {
+    flex: 4;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    transition: 0.3s;
+  }
+
+  section#screen h2,
+  section#screen h1 {
+    color: white;
+    font-size: 30px;
+    transition: 0.3s;
+  }
+
+  section#screen h1 {
+    margin: 0 auto;
+    font-size: 45px;
+  }
+
+  /* ======== player ===== */
+
+  section#player {
+    flex: 1;
+    width: 100%;
+    display: flex;
+  }
+
+  section#player button {
+    flex: 1;
+    font-size: 20px;
+  }
+}
+
+/* tablets - 
+===================================
+========================================
+===========================================
+=============================================
+*/
+
+@media screen and (min-width: 425px) {
+  section#initial input {
+    width: 400px;
+  }
+
+  /* ======== start ===== */
+
+  section#start p {
+    width: 390px;
+  }
+
+  section#start h1 {
+    font-size: 40px;
+  }
+}
+
+/* computer - 
+===================================
+========================================
+===========================================
+=============================================
+*/
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: #218df9;
+  }
+
+  section#initial input {
+    width: 600px;
+  }
+
+  /* ======== start ===== */
+
+  section#start p {
+    width: 500px;
+  }
+
+  section#start h1 {
+    font-size: 45px;
+  }
+
+  /* ======== computer ===== */
+
+  section#computer {
+    width: 768px;
+  }
+
+  /* ======== screen ===== */
+
+  section#screen {
+    width: 768px;
+    background-color: white;
+  }
+
+  section#screen h2,
+  section#screen h1 {
+    font-size: 40px;
+  }
+
+  section#screen h1 {
+    font-size: 50px;
+  }
+
+  /* ======== player ===== */
+
+  section#player {
+    width: 768px;
+  }
+
+  section#player button {
+    font-size: 30px;
+  }
+}
